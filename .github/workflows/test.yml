@@ -12,7 +12,7 @@ jobs:
         node: [20, 22, 24]
         mongodb-version: ['6.0', '7.0', '8.0']
         mongoose: ['^5.0.0','^6.0.0', '^7.0.0', '^8.0.0', '^9.0.0']
-    name: Node ${{ matrix.node }} MongoDB ${{ matrix.mongodb-version }}
+    name: Node ${{ matrix.node }} MongoDB ${{ matrix.mongodb-version }} Mongoose ${{ matrix.mongoose }}
     steps:
     - name: Git checkout
       uses: actions/checkout@v6
